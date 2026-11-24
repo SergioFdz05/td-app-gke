@@ -13,10 +13,8 @@ spec:
         app: python-appgke
     spec:
       containers:
-      - name: python-appgke
-        image: gcr.io/icai2025/python-appgke:latest
-        imagePullPolicy: Always
-        ports:
-        - containerPort: 5000
-
-
+        - name: python-appgke
+          image: us-central1-docker.pkg.dev/lab09-515718/lab09/python-appgke:latest
+          imagePullPolicy: Always
+          ports:
+            - containerPort: 5000
